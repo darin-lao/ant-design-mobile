@@ -86,7 +86,7 @@ export default class InputItem extends React.Component<InputItemProps, any> {
     if (onChange) {
       onChange(text);
     }
-  };
+  }
 
   onInputBlur = () => {
     if (this.props.onBlur) {

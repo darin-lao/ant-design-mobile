@@ -24,7 +24,7 @@ export default {
         visible
       >
         {content}
-      </PopupContainer>
+      </PopupContainer>,
     );
   },
   hide() {

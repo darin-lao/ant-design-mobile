@@ -16,25 +16,25 @@ export default class BasicModalExample extends React.Component<any, any> {
     this.setState({
       visible: true,
     });
-  };
+  }
 
   showModal2 = () => {
     this.setState({
       visible2: true,
     });
-  };
+  }
 
   onClose = () => {
     this.setState({
       visible: false,
     });
-  };
+  }
 
   onClose2 = () => {
     this.setState({
       visible2: false,
     });
-  };
+  }
 
   render() {
     return (
@@ -51,7 +51,7 @@ export default class BasicModalExample extends React.Component<any, any> {
               [
                 { text: 'Cancel', onPress: () => console.log('cancel'), style: 'cancel' },
                 { text: 'OK', onPress: () => console.log('ok') },
-              ]
+              ],
             );
           }}>
             显示 Modal.alert

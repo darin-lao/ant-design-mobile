@@ -22,7 +22,7 @@ if (Platform.OS !== 'ios') {
           if(!visible) {
             topView.remove();
           }
-        }} config={config} callback={callback}/>
+        }} config={config} callback={callback}/>,
       );
     },
     showShareActionSheetWithOptions(config: any) {
@@ -35,7 +35,7 @@ if (Platform.OS !== 'ios') {
               topView.remove();
             }
           }} config={config} share
-        />
+        />,
       );
     },
     close() {

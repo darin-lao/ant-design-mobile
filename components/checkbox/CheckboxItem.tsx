@@ -17,7 +17,7 @@ export default class CheckboxItem extends React.Component<CheckboxItemProps, any
     if (this.props.onClick) {
       this.props.onClick();
     }
-  };
+  }
 
   render() {
     let {style, checkboxStyle, defaultChecked, checked, disabled, children, extra, line, onChange, styles} = this.props;

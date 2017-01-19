@@ -76,7 +76,7 @@ export default class Pagination extends React.Component<PaginationProps, any> {
             [`${prefixCls}-wrap-dot-active`]: i === current,
           })}>
             <span />
-          </div>
+          </div>,
         );
       }
       markup = <div className={`${prefixCls}-wrap`}>{arr}</div>;

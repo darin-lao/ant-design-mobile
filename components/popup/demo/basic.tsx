@@ -49,7 +49,7 @@ export default class PopupExample extends React.Component<any, any> {
               maskClosable: true,
               animationType: 'slide-up',
               onMaskClose: () => new Promise(resolve => {setTimeout(resolve, 1000);}),
-            }
+            },
           )
         }>向上弹出效果</Button>
       </View>

@@ -32,7 +32,7 @@ class TabBar extends React.Component <TabBarProps, any> {
             idx === selectedIndex ? styles.contentItemSelected : null,
           ]}>
             {child.props.children}
-          </View>
+          </View>,
         );
       } else {
         newChildren.push(React.cloneElement(child, {

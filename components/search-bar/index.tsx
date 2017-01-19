@@ -33,7 +33,7 @@ export default class SearchBar extends React.Component<SearchBarProps, SearchBar
     if (this.props.onSubmit) {
       this.props.onSubmit(this.state.value);
     }
-  };
+  }
 
   onChangeText = (value) => {
     if (!('value' in this.props)) {
@@ -42,13 +42,13 @@ export default class SearchBar extends React.Component<SearchBarProps, SearchBar
     if (this.props.onChange) {
       this.props.onChange(value);
     }
-  };
+  }
 
   onCancel = () => {
     if (this.props.onCancel) {
       this.props.onCancel(this.state.value);
     }
-  };
+  }
 
   render() {
     const { showCancelButton, cancelText, disabled, styles } = this.props;

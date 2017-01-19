@@ -48,7 +48,7 @@ export default class Grid extends React.Component<GridProps, any> {
               onClick={() => onClick(el, dataIndex)}
             >
               {renderItem(el, dataIndex)}
-            </Flex.Item>
+            </Flex.Item>,
           );
         } else {
           rowArr.push(<Flex.Item key={`griditem-${dataIndex}`} />);

@@ -58,7 +58,7 @@ export default class ImagePicker extends React.Component<ImagePickerPropTypes, a
       };
       reader.readAsArrayBuffer(file.slice(0, 64 * 1024));
     }
-  };
+  }
 
   removeImage = (index) => {
     const newImages: any[] = [];
@@ -71,7 +71,7 @@ export default class ImagePicker extends React.Component<ImagePickerPropTypes, a
     if (this.props.onChange) {
       this.props.onChange(newImages, 'remove', index);
     }
-  };
+  }
 
   addImage = (imgItem) => {
     const { files = [] } = this.props;
@@ -79,13 +79,13 @@ export default class ImagePicker extends React.Component<ImagePickerPropTypes, a
     if (this.props.onChange) {
       this.props.onChange(newImages, 'add');
     }
-  };
+  }
 
   onImageClick = (index) => {
     if (this.props.onImageClick) {
       this.props.onImageClick(index, this.props.files);
     }
-  };
+  }
 
   onFileChange = () => {
     const fileSelectorEl = (this.refs as any).fileSelectorInput;
@@ -116,7 +116,7 @@ export default class ImagePicker extends React.Component<ImagePickerPropTypes, a
       };
       reader.readAsDataURL(file);
     }
-  };
+  }
 
   render() {
     const { prefixCls, style, className, files = [],
@@ -146,7 +146,7 @@ export default class ImagePicker extends React.Component<ImagePickerPropTypes, a
             onClick={() => { this.onImageClick(index); }}
             style={{ backgroundImage: `url(${image.url})` }}
           />
-        </div>
+        </div>,
       );
     });
 

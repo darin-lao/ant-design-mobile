@@ -79,7 +79,7 @@ export default class Pagination extends React.Component<PaginationProps, any> {
         arr.push(
           <View key={`dot-${i}`} style={[
             styles.pointStyle, styles.spaceStyle, i === current && styles.pointActiveStyle,
-          ]} />
+          ]} />,
         );
       }
       markup = <View style={[styles.indicatorStyle, this.props.indicatorStyle]}>{arr}</View>;

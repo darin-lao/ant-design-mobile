@@ -68,7 +68,7 @@ export default class TextareaItem extends React.Component<TextareaItemProps, Tex
     }
     // 设置 defaultValue 时，用户输入不会触发 componentDidUpdate ，此处手工调用
     this.componentDidUpdate();
-  };
+  }
 
   onBlur = (e) => {
     this.debounceTimeout = setTimeout(() => {
@@ -80,7 +80,7 @@ export default class TextareaItem extends React.Component<TextareaItemProps, Tex
     if (this.props.onBlur) {
       this.props.onBlur(value);
     }
-  };
+  }
 
   onFocus = (e) => {
     this.setState({
@@ -90,19 +90,19 @@ export default class TextareaItem extends React.Component<TextareaItemProps, Tex
     if (this.props.onFocus) {
       this.props.onFocus(value);
     }
-  };
+  }
 
   onErrorClick = () => {
     if (this.props.onErrorClick) {
       this.props.onErrorClick();
     }
-  };
+  }
 
   clearInput = () => {
     if (this.props.onChange) {
       this.props.onChange('');
     }
-  };
+  }
 
   render() {
     let {

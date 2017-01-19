@@ -114,7 +114,7 @@ export default class Item extends React.Component<ListItemProps, any> {
                   key={`${index}-children`}
                 >
                   {el}
-                </Text>
+                </Text>,
               );
             } else {
               tempExtraDom.push(el);

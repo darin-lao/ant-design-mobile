@@ -52,11 +52,11 @@ export default class Grid extends React.Component<GridProps, any> {
               onPress={() => onClick(el, dataIndex)}
             >
               {renderItem(el, dataIndex)}
-            </Flex.Item>
+            </Flex.Item>,
           );
         } else {
           rowArr.push(
-            <Flex.Item key={j} style={[styles.grayBorderBox, flexItemStyle]} />
+            <Flex.Item key={j} style={[styles.grayBorderBox, flexItemStyle]} />,
           );
         }
       }
@@ -66,7 +66,7 @@ export default class Grid extends React.Component<GridProps, any> {
           borderBottomWidth: hasLine ? 1 : 0,
         }]}>
           {rowArr}
-        </Flex>
+        </Flex>,
       );
     }
 

@@ -16,7 +16,7 @@ export default class RadioItem extends React.Component<RadioItemProps, any> {
   handleClick = () => {
     let radio: Radio = this.refs[refRadio] as Radio;
     radio.handleClick();
-  };
+  }
 
   render() {
     let {style, radioStyle, defaultChecked, checked, disabled, children, onChange, styles} = this.props;

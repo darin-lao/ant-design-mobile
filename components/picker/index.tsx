@@ -45,7 +45,7 @@ export default class Picker extends React.Component<tsPropsType, any> {
     return this.props.format && this.props.format(treeChildren.map((v) => {
         return v.label;
       }));
-  };
+  }
 
   render() {
     const { props } = this;

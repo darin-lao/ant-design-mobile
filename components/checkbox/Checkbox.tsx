@@ -40,7 +40,7 @@ export default class Checkbox extends React.Component<CheckboxProps, any> {
     if (this.props.onChange) {
       this.props.onChange({target: { checked }});
     }
-  };
+  }
 
   render(): JSX.Element {
     let {style, disabled, children, styles} = this.props;

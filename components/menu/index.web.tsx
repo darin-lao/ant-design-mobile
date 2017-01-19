@@ -42,7 +42,7 @@ export default class Menu extends React.Component<MenuProps, any> {
     if (dataItem.isLeaf && this.props.onChange) {
       this.props.onChange([dataItem.value]);
     }
-  };
+  }
 
   onClickSubMenuItem = (dataItem) => {
     const { level, onChange } = this.props;
@@ -51,7 +51,7 @@ export default class Menu extends React.Component<MenuProps, any> {
         onChange(level === 2 ? [this.state.firstLevelSelectValue, dataItem.value] : [dataItem.value]);
       }
     }, 300);
-  };
+  }
 
   render() {
     const { className, style, height, data = [], prefixCls, value, level } = this.props;

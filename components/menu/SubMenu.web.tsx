@@ -24,7 +24,7 @@ export default class SubMenu extends React.Component<any, any> {
     if (this.props.onSel) {
       this.props.onSel(dataItem);
     }
-  };
+  }
   render() {
     const { subMenuPrefixCls, radioPrefixCls, subMenuData } = this.props;
     const { selItem } = this.state;

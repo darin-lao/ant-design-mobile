@@ -79,7 +79,7 @@ const ActionSheetAndroid = React.createClass<Props, any>({
                     </TouchableHighlight>
                     {cancelButtonIndex === index ? <View style={styles.cancelBtnMask}/> : null}
                   </View>
-                )
+                ),
               )
             }
           </View>

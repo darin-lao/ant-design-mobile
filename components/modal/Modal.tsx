@@ -38,7 +38,7 @@ class AntmModal extends React.Component<ModalPropsType, any> {
     if (this.props.maskClosable && this.props.onClose) {
       this.props.onClose();
     }
-  };
+  }
 
   onFooterLayout = (e) => {
     if (this.root) {
@@ -46,11 +46,11 @@ class AntmModal extends React.Component<ModalPropsType, any> {
         style: [{ paddingBottom: e.nativeEvent.layout.height }, maxHeight],
       });
     }
-  };
+  }
 
   saveRoot = (root) => {
     this.root = root;
-  };
+  }
 
   render() {
     const {
